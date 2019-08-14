@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html, body, main {
+    height: 100%;
+    position: relative;
+  }
+  body {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  footer {
+    position: absolute;
+    bottom: 0;
+    height: 45px;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+    display: flex;
+  }
+  
+  footer>div {
+    flex: 1;
+    font-size: 12px;
+    text-align: center;
+    color: #666;
+    padding-top: 6px;
+  }
+  
+  footer span {
+    display: block;
+  }
+  
+  footer .active {
+    color: #FF5722;
+  }
+  
+  main > section {
+    height: calc(100% - 45px);
+    padding: 10px;
+    background: #fff;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch; /*ios 上增加弹性*/
+    display: none;
+    
+  }
+  
+  
+  
+  main section:first-child {
+    display: block;
+  }
+  
+  section .item {
+    border-bottom: 1px solid #ddd;
+    display: flex;
+  }
+  
+  .item a {
+    display: flex;
+    color: black;
+  }
+  
+  .item .order {
+    display: flex;
+    align-items: center;
+  }
+  
+  section .order span{
+    padding: 0 4px;
+    background: green;
+    color: #fff;
+    
+  }
+  
+  .item .detail {
+    padding: 10px 0 10px 10px;
+  }
+  
+  .item .detail h2 {
+    font-size: 16px;
+  }
+  
+  .item .detail .extra {
+    margin-top: 4px;
+    color: #888;
+  }
+  
+  section .loading {
+    text-align: center;
+    padding-top: 10px;
+    display: none;
+  }
+  
+  .loading .iconfont{
+    display: inline-block;
+    animation: 1s rotate linear infinite;
+  }
+  
+  @keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .item .cover,
+  .item .cover img {
+    width: 50px;
+    border-radius: 4px;
+  }
+  
+  .item .cover {
+    margin: 5px;
+  }
+  
+  #search {
+    height: calc(100% - 45px);
+  }
+  section .search-area{
+    color: #333;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+  }
+  section .search-area input {
+    width: calc(100% - 50px);
+    padding: 8px;
+    background-color: #eee;
+    border: none;
+    border-radius: 2px;
+    box-shadow: none;
+    outline: none;
+  }
+  section .search-area .button{
+    position: absolute;
+    right: 0;
+    padding: 8px 10px;
+    background: #FF5722;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+  }
